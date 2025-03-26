@@ -24,6 +24,22 @@
     <link rel="stylesheet" href="assets/css/odometer.css" />
     <link rel="stylesheet" href="assets/css/default.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .td-banner-area {
+        position: relative;
+        background: url("assets/img/logo/logo.png") center center / cover no-repeat;
+      }
+      .td-banner-overlay {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5); /* Adjust opacity for darkness */
+      }
+      .td-banner-area .container {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
   </head>
 
   <body>
@@ -377,7 +393,7 @@
             >
               <div class="mb-40 td-countdown-2-location-wrap text-end ">
                 <div class="td-countdown-2-location text-start p-relative bg-primary">
-                  <a class="td-btn-square d-xl-block bg-primary" href="contact.html">Buy
+                  <a class="td-btn-square d-xl-block bg-primary" href="Ticket.html">Buy
                   <span class="subtitle"> Ticket</span></a>
                 </div>
               </div>
@@ -1437,62 +1453,63 @@
         </div>
       </div>
       <!-- td-schedule-area-end -->
-
       <!-- td-banner-area-start -->
+<div
+class="td-banner-area td-banner-spacing-2 bg-position jarallax"
+data-background="assets/img/logo/logo.png"
+>
+<div class="td-banner-overlay"></div>
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-xl-6 col-lg-8">
       <div
-        class="td-banner-area td-banner-spacing-2 bg-position jarallax"
-        data-background="assets/img/banner/bn.jpg"
+        class="td-banner-title-wrap td-banner-title-wrap-2 wow fadeInLeft"
+        data-wow-duration="1.5s"
+        data-wow-delay="0.3s"
       >
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xl-6 col-lg-8">
-              <div
-                class="td-banner-title-wrap td-banner-title-wrap-2 wow fadeInLeft"
-                data-wow-duration="1.5s"
-                data-wow-delay="0.3s"
-              >
-                <span class="mb-20 td-section-subtitle td-section-subtitle-2"
-                  >GET EXPERIENCE</span
-                >
-                <h2 class="td-section-title mb-15">
-                  the best experience in Design Principles
-                </h2>
-                <p class="mb-35">
-                  Like previous year this year we are arranging world marketing
-                  <br />
-                  summit 2025. Its the gathering of all the big
-                </p>
-                <a class="td-btn-square" href="contact.html">Buy Tickets Now</a>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-4">
-              <div class="td-banner-2-video-wrap ml-200">
-                <a
-                  class="td-video-play popup-video td-pulse-border"
-                  href="https://www.youtube.com/watch?v=JYVn0a-XOdA"
-                >
-                  <span class="p-relative z-index-11">
-                    <svg
-                      width="20"
-                      height="24"
-                      viewBox="0 0 20 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M19.8571 12L0.571429 23.1346L0.57143 0.865352L19.8571 12Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-              
-            </div>
-          </div>
-        </div>
+        <span class="mb-20 td-section-subtitle td-section-subtitle-2"
+          >GET EXPERIENCE</span
+        >
+        <h2 class="td-section-title mb-15">
+          the best experience in Design Principles
+        </h2>
+        <p class="mb-35">
+          Like previous year this year we are arranging world marketing
+          <br />
+          summit 2025. Its the gathering of all the big
+        </p>
+        <a class="td-btn-square" href="Ticket.html">Buy Tickets Now</a>
       </div>
-      <!-- td-banner-area-end -->
+    </div>
+    <div class="col-xl-6 col-lg-4">
+      <div class="td-banner-2-video-wrap ml-200">
+        <a
+          class="td-video-play popup-video td-pulse-border"
+          href="https://www.youtube.com/watch?v=JYVn0a-XOdA"
+        >
+          <span class="p-relative z-index-11">
+            <svg
+              width="20"
+              height="24"
+              viewBox="0 0 20 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.8571 12L0.571429 23.1346L0.57143 0.865352L19.8571 12Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- td-banner-area-end -->
+      
+      
 
       <!-- td-pricing-area-start -->
       <div class="td-pricing-area grey-bg pt-140 pb-110 fix">
@@ -1527,9 +1544,9 @@
                 class="td-pricing-2-item bg-position"
                 data-background="assets/img/pricing/bg.png"
               >
-                <div class="text-center td-pricing-2-price mb-30">
-                  <span class="mb-5 subtitle">Silver Pass</span>
-                  <span class="price">$19.00</span>
+                <div class=" td-pricing-2-price mb-30">
+                  <span class="mb-5 subtitle">Early Bird</span>
+                  <span class="price">Ksh.500</span>
                 </div>
                 <div class="td-pricing-2-feature mb-35">
                   <ul>
@@ -1655,7 +1672,7 @@
                     </li>
                   </ul>
                 </div>
-                <a class="td-btn-square" href="contact.html"
+                <a class="td-btn-square" href="Ticket.html"
                   >Purchase Tickets</a
                 >
               </div>
@@ -1670,8 +1687,8 @@
                 data-background="assets/img/pricing/bg.png"
               >
                 <div class="text-center td-pricing-2-price mb-30">
-                  <span class="mb-5 subtitle">Golden Pass</span>
-                  <span class="price">$29.00</span>
+                  <span class="mb-5 subtitle">Advance</span>
+                  <span class="price">Ksh.800</span>
                 </div>
                 <div class="td-pricing-2-feature mb-35">
                   <ul>
@@ -1797,7 +1814,7 @@
                     </li>
                   </ul>
                 </div>
-                <a class="td-btn-square" href="contact.html"
+                <a class="td-btn-square" href="Ticket.html"
                   >Purchase Tickets</a
                 >
               </div>
@@ -1812,8 +1829,8 @@
                 data-background="assets/img/pricing/bg.png"
               >
                 <div class="text-center td-pricing-2-price mb-30">
-                  <span class="mb-5 subtitle">Platinum Pass</span>
-                  <span class="price">$49.00</span>
+                  <span class="mb-5 subtitle">Gate:</span>
+                  <span class="price">Ksh.500</span>
                 </div>
                 <div class="td-pricing-2-feature mb-35">
                   <ul>
@@ -1939,7 +1956,7 @@
                     </li>
                   </ul>
                 </div>
-                <a class="td-btn-square" href="contact.html"
+                <a class="td-btn-square" href="Ticket.html"
                   >Purchase Tickets</a
                 >
               </div>
@@ -2189,7 +2206,7 @@
                     <div class="td-footer-links">
                       <ul>
                         <li><a href="#">News</a></li>
-                        <li><a href="#">Get Tickets</a></li>
+                        <li><a href="Ticket.html">Get Tickets</a></li>
                         <li><a href="#">Benefits</a></li>
                         <li><a href="#">Contact Us</a></li>
                       </ul>
