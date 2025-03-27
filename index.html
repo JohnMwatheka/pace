@@ -57,6 +57,9 @@
         position: relative;
         z-index: 1;
       }
+      .not{
+        cursor: no-drop;
+      }
     </style>
   </head>
 
@@ -157,10 +160,8 @@
       >
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-xl-9 col-6">
-              <div
-                class="tdmenu__wrap d-flex align-items-center justify-content-between"
-              >
+            <div class="col-xl-12 col-6">
+              <div class="tdmenu__wrap d-flex align-items-center justify-content-between">
                 <div class="logo">
                   <a class="logo-1" href="index.html"
                     ><img src="assets/img/logo/logo.png" alt="Logo" width="100" height="100"
@@ -214,26 +215,20 @@
                           </li>
                         </ul>
                       </li> -->
-                      <li><a href="contact.html">Contact</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="contact.html">Contact</a>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="Ticket.html">Buy Tickect</a>
+                      </li>
                     </ul>
                   </div>
                 </nav>
               </div>
             </div>
             <div class="col-xl-3 col-6">
-              <div
-                class="td-menu-right-action td-menu-right-action-2 d-flex align-items-center justify-content-end"
-              >
-                <button class="search-button search-open-btn">
-                  <i class="flaticon-search"></i>
-                </button>
-                <div class="td-header-cart p-relative">
-                  <button class="cart-button cartmini-open-btn">
-                    <i class="flaticon-shopping-cart"></i>
-                    <span class="td-header-cart-count">0</span>
-                  </button>
-                </div>
-                <div class="td-header-menu-bar lh-1 p-relative ml-25 ">
+              <div class="td-menu-right-action td-menu-right-action-2 d-flex align-items-center justify-content-end">
+                  <div class="td-header-menu-bar lh-1 p-relative ml-25 ">
                   <button
                     class="tdmenu-offcanvas-open-btn mobile-nav-toggler d-block d-xl-none"
                   >
@@ -269,19 +264,16 @@
           <div class="social-links">
             <ul class="list-wrap">
               <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://x.com/the_pace_mag"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/pace_setter_mag/"><i class="fab fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="http://www.youtube.com/@ThePaceSetterMag"><i class="fab fa-youtube"></i></a>
               </li>
             </ul>
           </div>
@@ -363,16 +355,13 @@
           <div class="td-hero-social d-flex align-items-center">
             <span>Follow Us On:</span>
             <span
-              ><a href="#"><i class="fa-brands fa-whatsapp"></i></a
+              ><a href="https://wa.me/254726846918?text=Hello%20Pace%20Setter,%20I%20want%20to%20book%20an%20event"><i class="fa-brands fa-whatsapp"></i></a
             ></span>
             <span
-              ><a href="#"><i class="fa-brands fa-linkedin"></i></a
-            ></span>
-            <span
-              ><a href="#"><i class="fa-brands fa-instagram"></i></a
+              ><a href="https://www.instagram.com/pace_setter_mag/"><i class="fa-brands fa-instagram"></i></a
             ></span>
             <span>
-              <a href="#">
+              <a href="https://x.com/the_pace_mag">
                 <svg
                   width="19"
                   height="19"
@@ -388,7 +377,7 @@
               </a>
             </span>
             <span
-              ><a href="#"><i class="fa-brands fa-facebook"></i></a
+              ><a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"><i class="fa-brands fa-facebook"></i></a
             ></span>
           </div>
         </div>
@@ -404,17 +393,20 @@
       <div class="td-countdown-area pt-50">
         <div class="container">
           <div class="row align-items-center d-flex">
-            <div
-              class="col-xl-4 col-lg-5 wow fadeInUp order-2"
-              data-wow-duration=".9s"
-              data-wow-delay=".6s"
-            >
-              <div class="mb-40 td-countdown-2-location-wrap text-end ">
-                <div class="td-countdown-2-location text-start p-relative bg-primary">
-                  <a class="td-btn-square d-xl-block bg-primary" href="Ticket.html">Buy
-                  <span class="subtitle"> Ticket</span></a>
+            <div class="col-xl-3 col-lg-5 wow fadeInUp order-1" data-wow-duration=".9s" data-wow-delay=".2s">
+                <div class="mb-40 td-countdown-2-title">
+                  <h2 class="title">Kagaa Girls</h2>
+                  <span class="subtitle">24th June, 2025</span>
                 </div>
               </div>
+
+              <div class="col-xl-3 col-lg-5 wow fadeInUp order-1" data-wow-duration=".9s" data-wow-delay=".2s">
+                <div class="mb-40 td-countdown-2-location-wrap text-end ">
+                  <div class="td-countdown-2-location text-start p-relative bg-primary">
+                    <a class="td-btn-square d-xl-block bg-primary" href="Ticket.html">Buy
+                    <span class="subtitle"> Ticket</span></a>
+                  </div>
+                </div>
             </div>
             <div
               class="col-xl-5 col-lg-7 wow fadeInUp order-3"
@@ -460,41 +452,12 @@
               data-wow-delay="0.3s"
             >
               <div class="td-about-2-content">
-                <span class="td-section-subtitle td-section-subtitle-2 mb-30">About This Meetup</span>
-                <h2 class="mb-10 td-section-title">Pace setter</h2>
+                <span class="td-section-subtitle td-section-subtitle-2 mb-30">Teens Festive</span>
+                <h2 class="mb-10 td-section-title">TeensFest 2025</h2>
                 <p class="para" style="text-align: justify;">
                   Welcome to Pacesetter Entertainment, the premier party and events company in Nairobi, Kenya. We specialize in creating unforgettable experiences that Educate, Motivate and Entertain. Pace Setter Entertainment was founded in 2023 as an events agency playing at Various institutions across Kenya. Over the years, the company has evolved in scale, capacity, and experience to become a key player in event management and organisation
                 </p>
               </div>
-              <div class="td-about-2-list mb-30">
-                <ul>
-                  <li>
-                    <i class="fa-sharp fa-solid fa-check"></i>
-                    <span>Minere Arena Banquet Hall</span>
-                  </li>
-                  <li>
-                    <i class="fa-sharp fa-solid fa-check"></i>
-                    <span>Minere Arena Banquet Hall</span>
-                  </li>
-                  <li>
-                    <i class="fa-sharp fa-solid fa-check"></i>
-                    <span>Connect with Industry Leaders</span>
-                  </li>
-                  <li>
-                    <i class="fa-sharp fa-solid fa-check"></i>
-                    <span>Minere Arena Banquet Hall</span>
-                  </li>
-                  <li>
-                    <i class="fa-sharp fa-solid fa-check"></i>
-                    <span>Connect with Industry Leaders</span>
-                  </li>
-                  <li>
-                    <i class="fa-sharp fa-solid fa-check"></i>
-                    <span>Minere Arena Banquet Hall</span>
-                  </li>
-                </ul>
-              </div>
-              <a class="td-btn-square" href="about.html">Read More</a>
             </div>
           </div>
         </div>
@@ -508,9 +471,9 @@
 
       <!-- td-counter-area-start -->
       <div class="td-counter-area pt-70 pb-115">
-        <div class="container">
+        <div class="container ">
           <div class="row">
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
               <div class="td-counter-2-wrap ml-30 mb-30">
                 <span class="mr-20 td-counter-2-icon">
                   <i class="flaticon-speaker"></i>
@@ -519,11 +482,11 @@
                   <h2 class="td-counter-2-title count">
                     <span class="odometer" data-count="65"></span>+
                   </h2>
-                  <span class="td-counter-2-subtitle">Skilled Speakers</span>
+                  <span class="td-counter-2-subtitle">Artists</span>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
               <div class="td-counter-2-wrap ml-30 mb-30">
                 <span class="mr-20 td-counter-2-icon">
                   <svg
@@ -554,11 +517,11 @@
                     <span class="odometer" data-count="10"></span>
                     +
                   </h2>
-                  <span class="td-counter-2-subtitle">Live Workshop</span>
+                  <span class="td-counter-2-subtitle">Experiences</span>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
               <div class="td-counter-2-wrap ml-30 mb-30">
                 <span class="mr-20 td-counter-2-icon">
                   <i class="flaticon-fastfood"></i>
@@ -571,19 +534,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div class="td-counter-2-wrap ml-30 mb-30">
-                <span class="mr-20 td-counter-2-icon">
-                  <i class="flaticon-deal"></i>
-                </span>
-                <div class="td-counter-2-content">
-                  <h2 class="td-counter-2-title count">
-                    <span class="odometer" data-count="15"></span>+
-                  </h2>
-                  <span class="td-counter-2-subtitle">Popular Snacks</span>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -604,25 +555,14 @@
               >
                 <span
                   class="mb-20 td-section-subtitle td-section-subtitle-2 mb-30"
-                  >Learn From Spekaers</span
+                  >Artists & Spekaers</span
                 >
                 <h2 class="td-section-title">
-                  Our Amazing & learned <br />event Speakrs
+                  Our Amazing & Creative <br />event Artists
                 </h2>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div
-                class="td-team-2-title-text mb-35 wow fadeInRight"
-                data-wow-duration="1.5s"
-                data-wow-delay="0.3s"
-              >
-                <p>
-                  Like previous year this year we are arranging world marketing
-                  summit 2025. Its the gathering of all the big
-                </p>
-              </div>
-            </div>
+            
           </div>
           <div class="row">
             <div
@@ -674,13 +614,13 @@
                   <h2 class="td-team-2-title">
                     <a href="team-details.html">Devon Lane</a>
                   </h2>
-                  <span class="td-team-2-position">Sr. Software Engineer</span>
+                  <span class="td-team-2-position">Master of Ceremony</span>
                 </div>
                 <div class="td-team-2-social">
-                  <a href="#"
+                  <a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"
                     ><i class="fa-brands fa-facebook"></i><span></span
                   ></a>
-                  <a href="#">
+                  <a href="https://x.com/the_pace_mag">
                     <svg
                       width="19"
                       height="19"
@@ -695,10 +635,7 @@
                     </svg>
                     <span></span>
                   </a>
-                  <a href="#"
-                    ><i class="fa-brands fa-linkedin"></i><span></span
-                  ></a>
-                  <a href="#"
+                  <a href="https://www.instagram.com/pace_setter_mag/"
                     ><i class="fa-brands fa-instagram"></i><span></span
                   ></a>
                 </div>
@@ -753,13 +690,13 @@
                   <h2 class="td-team-2-title">
                     <a href="team-details.html">Esther Howard</a>
                   </h2>
-                  <span class="td-team-2-position">Marketing Manager</span>
+                  <span class="td-team-2-position">Artist</span>
                 </div>
                 <div class="td-team-2-social">
-                  <a href="#"
+                  <a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"
                     ><i class="fa-brands fa-facebook"></i><span></span
                   ></a>
-                  <a href="#">
+                  <a href="https://x.com/the_pace_mag">
                     <svg
                       width="19"
                       height="19"
@@ -774,10 +711,7 @@
                     </svg>
                     <span></span>
                   </a>
-                  <a href="#"
-                    ><i class="fa-brands fa-linkedin"></i><span></span
-                  ></a>
-                  <a href="#"
+                  <a href="https://www.instagram.com/pace_setter_mag/"
                     ><i class="fa-brands fa-instagram"></i><span></span
                   ></a>
                 </div>
@@ -832,13 +766,13 @@
                   <h2 class="td-team-2-title">
                     <a href="team-details.html">Cody Fisher</a>
                   </h2>
-                  <span class="td-team-2-position">Sr. Software Engineer</span>
+                  <span class="td-team-2-position">Deejay</span>
                 </div>
                 <div class="td-team-2-social">
-                  <a href="#"
+                  <a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"
                     ><i class="fa-brands fa-facebook"></i><span></span
                   ></a>
-                  <a href="#">
+                  <a href="https://x.com/the_pace_mag">
                     <svg
                       width="19"
                       height="19"
@@ -853,10 +787,7 @@
                     </svg>
                     <span></span>
                   </a>
-                  <a href="#"
-                    ><i class="fa-brands fa-linkedin"></i><span></span
-                  ></a>
-                  <a href="#"
+                  <a href="https://www.instagram.com/pace_setter_mag/"
                     ><i class="fa-brands fa-instagram"></i><span></span
                   ></a>
                 </div>
@@ -911,13 +842,13 @@
                   <h2 class="td-team-2-title">
                     <a href="team-details.html">Floyd Miles</a>
                   </h2>
-                  <span class="td-team-2-position">CEO</span>
+                  <span class="td-team-2-position">Speaker</span>
                 </div>
                 <div class="td-team-2-social">
-                  <a href="#"
+                  <a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"
                     ><i class="fa-brands fa-facebook"></i><span></span
                   ></a>
-                  <a href="#">
+                  <a href="https://x.com/the_pace_mag">
                     <svg
                       width="19"
                       height="19"
@@ -932,10 +863,7 @@
                     </svg>
                     <span></span>
                   </a>
-                  <a href="#"
-                    ><i class="fa-brands fa-linkedin"></i><span></span
-                  ></a>
-                  <a href="#"
+                  <a href="https://www.instagram.com/pace_setter_mag/"
                     ><i class="fa-brands fa-instagram"></i><span></span
                   ></a>
                 </div>
@@ -990,13 +918,13 @@
                   <h2 class="td-team-2-title">
                     <a href="team-details.html">Jane Cooper</a>
                   </h2>
-                  <span class="td-team-2-position">Sr. Software Engineer</span>
+                  <span class="td-team-2-position">Deejay</span>
                 </div>
                 <div class="td-team-2-social">
-                  <a href="#"
+                  <a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"
                     ><i class="fa-brands fa-facebook"></i><span></span
                   ></a>
-                  <a href="#">
+                  <a href="https://x.com/the_pace_mag">
                     <svg
                       width="19"
                       height="19"
@@ -1011,10 +939,7 @@
                     </svg>
                     <span></span>
                   </a>
-                  <a href="#"
-                    ><i class="fa-brands fa-linkedin"></i><span></span
-                  ></a>
-                  <a href="#"
+                  <a href="https://www.instagram.com/pace_setter_mag/"
                     ><i class="fa-brands fa-instagram"></i><span></span
                   ></a>
                 </div>
@@ -1069,13 +994,13 @@
                   <h2 class="td-team-2-title">
                     <a href="team-details.html">Kristin Watson</a>
                   </h2>
-                  <span class="td-team-2-position">Marketing Manager</span>
+                  <span class="td-team-2-position">Artist</span>
                 </div>
                 <div class="td-team-2-social">
-                  <a href="#"
+                  <a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"
                     ><i class="fa-brands fa-facebook"></i><span></span
                   ></a>
-                  <a href="#">
+                  <a href="https://x.com/the_pace_mag">
                     <svg
                       width="19"
                       height="19"
@@ -1090,10 +1015,7 @@
                     </svg>
                     <span></span>
                   </a>
-                  <a href="#"
-                    ><i class="fa-brands fa-linkedin"></i><span></span
-                  ></a>
-                  <a href="#"
+                  <a href="https://www.instagram.com/pace_setter_mag/"
                     ><i class="fa-brands fa-instagram"></i><span></span
                   ></a>
                 </div>
@@ -1148,13 +1070,13 @@
                   <h2 class="td-team-2-title">
                     <a href="team-details.html">Theresa Web</a>
                   </h2>
-                  <span class="td-team-2-position">Sr. Software Engineer</span>
+                  <span class="td-team-2-position">Deejay</span>
                 </div>
                 <div class="td-team-2-social">
-                  <a href="#"
+                  <a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"
                     ><i class="fa-brands fa-facebook"></i><span></span
                   ></a>
-                  <a href="#">
+                  <a href="https://x.com/the_pace_mag">
                     <svg
                       width="19"
                       height="19"
@@ -1169,10 +1091,7 @@
                     </svg>
                     <span></span>
                   </a>
-                  <a href="#"
-                    ><i class="fa-brands fa-linkedin"></i><span></span
-                  ></a>
-                  <a href="#"
+                  <a href="https://www.instagram.com/pace_setter_mag/"
                     ><i class="fa-brands fa-instagram"></i><span></span
                   ></a>
                 </div>
@@ -1227,13 +1146,13 @@
                   <h2 class="td-team-2-title">
                     <a href="team-details.html">Wade Warren</a>
                   </h2>
-                  <span class="td-team-2-position">Manager</span>
+                  <span class="td-team-2-position">Speaker</span>
                 </div>
                 <div class="td-team-2-social">
-                  <a href="#"
+                  <a href="https://www.facebook.com/p/The-Pace-setter-Mag-61550425191042/"
                     ><i class="fa-brands fa-facebook"></i><span></span
                   ></a>
-                  <a href="#">
+                  <a href="https://x.com/the_pace_mag">
                     <svg
                       width="19"
                       height="19"
@@ -1248,10 +1167,7 @@
                     </svg>
                     <span></span>
                   </a>
-                  <a href="#"
-                    ><i class="fa-brands fa-linkedin"></i><span></span
-                  ></a>
-                  <a href="#"
+                  <a href="https://www.instagram.com/pace_setter_mag/"
                     ><i class="fa-brands fa-instagram"></i><span></span
                   ></a>
                 </div>
@@ -1270,31 +1186,19 @@
               <div class="swiper-wrapper slide-transtion">
                 <div class="swiper-slide">
                   <div class="td-text-slider-item">
-                    <h3 class="text">Business Conference</h3>
+                    <h3 class="text">Event Name</h3>
                     <img src="assets/img/text/round.png" alt="round" />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="td-text-slider-item">
-                    <h3 class="text">Book Your Ticket</h3>
+                    <h3 class="text">Date of the event</h3>
                     <img src="assets/img/text/round.png" alt="round" />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="td-text-slider-item">
-                    <h3 class="text">Industry Lead Company</h3>
-                    <img src="assets/img/text/round.png" alt="round" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="td-text-slider-item">
-                    <h3 class="text">Business Conference 2025</h3>
-                    <img src="assets/img/text/round.png" alt="round" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="td-text-slider-item">
-                    <h3 class="text">Industry Lead Company</h3>
+                    <h3 class="text">Pace Setter INT</h3>
                     <img src="assets/img/text/round.png" alt="round" />
                   </div>
                 </div>
@@ -1306,7 +1210,7 @@
       <!-- td-text-slider-area-end -->
 
       <!-- td-schedule-area-start -->
-      <div
+      <!-- <div
         class="td-schedule-2-area pt-140 pb-140 bg-position"
         data-background="assets/img/about/bg.jpg"
       >
@@ -1469,7 +1373,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- td-schedule-area-end -->
       <!-- td-banner-area-start -->
 <div
@@ -1486,16 +1390,11 @@ data-background="assets/img/logo/logo.png"
         data-wow-delay="0.3s"
       >
         <span class="mb-20 td-section-subtitle td-section-subtitle-2"
-          >GET EXPERIENCE</span
+          >PACE EXPERIENCE</span
         >
         <h2 class="td-section-title mb-15">
-          the best experience in Design Principles
+          The best teenFest experience 2025
         </h2>
-        <p class="mb-35">
-          Like previous year this year we are arranging world marketing
-          <br />
-          summit 2025. Its the gathering of all the big
-        </p>
         <a class="td-btn-square" href="Ticket.html">Buy Tickets Now</a>
       </div>
     </div>
@@ -1545,10 +1444,7 @@ data-background="assets/img/logo/logo.png"
                 <h2 class="mb-10 td-section-title">
                   Explore flexible pricing plans
                 </h2>
-                <p class="td-section-text">
-                  Like previous year this year we are arranging world marketing
-                  summit 2025. Its the gathering of all the big
-                </p>
+                
               </div>
             </div>
           </div>
@@ -1586,7 +1482,7 @@ data-background="assets/img/logo/logo.png"
                           />
                         </svg>
                       </span>
-                      <span>Access to mobile app</span>
+                      <span class="">Open</span>
                     </li>
                     <li>
                       <span>
@@ -1606,91 +1502,13 @@ data-background="assets/img/logo/logo.png"
                           />
                         </svg>
                       </span>
-                      <span>Access to 1000+ talk</span>
+                      <span class="">Ends in July, 2025</span>
                     </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Access to exhibition floor</span>
-                    </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Email 24/7 awsupport</span>
-                    </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Access to 1000+ talk</span>
-                    </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>exhibition floor area</span>
-                    </li>
+                    <li></li>
+                    <li></li>
                   </ul>
                 </div>
-                <a class="td-btn-square" href="Ticket.html"
+                <a class="td-btn-square" href="Ticket.html" title="Open Now"
                   >Purchase Tickets</a
                 >
               </div>
@@ -1728,7 +1546,7 @@ data-background="assets/img/logo/logo.png"
                           />
                         </svg>
                       </span>
-                      <span>Access to mobile app</span>
+                      <span>Opens August, 2025</span>
                     </li>
                     <li>
                       <span>
@@ -1748,93 +1566,16 @@ data-background="assets/img/logo/logo.png"
                           />
                         </svg>
                       </span>
-                      <span>Access to 1000+ talk</span>
+                      <span>Ends October, 2025</span>
                     </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Access to exhibition floor</span>
-                    </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Email 24/7 awsupport</span>
-                    </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Access to 1000+ talk</span>
-                    </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>exhibition floor area</span>
-                    </li>
+                    <li></li>
+                    <li></li>
                   </ul>
                 </div>
-                <a class="td-btn-square" href="Ticket.html"
-                  >Purchase Tickets</a
-                >
+                <a class="td-btn-square not" href="Ticket.html" onclick="return false;" style="pointer-events: none; color: rgb(197, 190, 190); text-decoration: none; cursor: no-drop; background-color: #f7f1f1" title="closed">
+                  Purchase Tickets
+                </a>
+                
               </div>
             </div>
             <div
@@ -1847,8 +1588,8 @@ data-background="assets/img/logo/logo.png"
                 data-background="assets/img/pricing/bg.png"
               >
                 <div class="text-center td-pricing-2-price mb-30">
-                  <span class="mb-5 subtitle">Gate:</span>
-                  <span class="price">Ksh.500</span>
+                  <span class="mb-5 subtitle">Gate</span>
+                  <span class="price">Ksh.1,000</span>
                 </div>
                 <div class="td-pricing-2-feature mb-35">
                   <ul>
@@ -1870,7 +1611,7 @@ data-background="assets/img/logo/logo.png"
                           />
                         </svg>
                       </span>
-                      <span>Access to mobile app</span>
+                      <span>On 20th, October</span>
                     </li>
                     <li>
                       <span>
@@ -1890,93 +1631,16 @@ data-background="assets/img/logo/logo.png"
                           />
                         </svg>
                       </span>
-                      <span>Access to 1000+ talk</span>
+                      <span>Gate opens at 3:00 p.m</span>
                     </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Access to exhibition floor</span>
-                    </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Email 24/7 awsupport</span>
-                    </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>Access to 1000+ talk</span>
-                    </li>
-                    <li>
-                      <span>
-                        <svg
-                          width="22"
-                          height="22"
-                          viewBox="0 0 22 22"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                            stroke="currentColor"
-                            stroke-width="2.2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span>exhibition floor area</span>
-                    </li>
+                    <li></li>
+                    <li></li>
                   </ul>
                 </div>
-                <a class="td-btn-square" href="Ticket.html"
-                  >Purchase Tickets</a
-                >
+                <a class="td-btn-square not" href="Ticket.html" onclick="return false;" style="pointer-events: none; color: rgb(197, 190, 190); text-decoration: none; cursor: no-drop; background-color: #f7f1f1" title="closed">
+                  Purchase Tickets
+                </a>
+                
               </div>
             </div>
           </div>
@@ -1998,12 +1662,9 @@ data-background="assets/img/logo/logo.png"
                   >Sponsors</span
                 >
                 <h2 class="mb-10 td-section-title">
-                  Offcial Sponsors & Partners
+                  Our Sponsors & Partners 2025
                 </h2>
-                <p class="td-section-text">
-                  Like previous year this year re arranging world<br />
-                  marketing ummit Its the gathering
-                </p>
+                
               </div>
             </div>
           </div>
@@ -2115,21 +1776,18 @@ data-background="assets/img/logo/logo.png"
                 data-wow-delay="0.3s"
               >
                 <span class="mb-20 td-section-subtitle td-section-subtitle-2"
-                  >Location</span
+                  >Event Venue</span
                 >
                 <h2 class="td-section-title">
-                  Get direction to the event hall
+                  Get direction to the event venue
                 </h2>
-                <p class="text-white td-section-text mb-35">
-                  Like previous year this year we are arranging world marketing
-                  summit 2025. Its the gathering of all the big
-                </p>
+                
                 <div class="flex-wrap td-location-2-addres d-flex">
                   <div class="mb-15">
                     <span class="mb-10 d-inline-block">Venue</span>
                     <p>
-                      New califor Kames<br />
-                      D.bradd ock Hall
+                      Event Name<br />
+                       Venue
                     </p>
                   </div>
                   <div class="td-border d-none d-sm-block"></div>
@@ -2139,29 +1797,15 @@ data-background="assets/img/logo/logo.png"
                       href="https://www.google.com/maps"
                       target="_blank"
                       class="d-block"
-                      >1356 Broadway, New York<br />
-                      NY 10018, USA</a
-                    >
+                      >Adress<br />
+                      Of the event</a>
                   </div>
                 </div>
-                <a
-                  class="td-btn-square td-btn-square-xl"
-                  href="events-venue.html"
-                  >Get Direction</a
-                >
               </div>
             </div>
             <div class="col-xl-7 col-lg-12">
               <div class="td-location-2-map h-100 ml-90 pb-50">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31078.361591144112!2d-74.0256365664179!3d40.705584751235754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1724572184688!5m2!1sen!2sbd"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26799.59403538039!2d36.77643509741882!3d-1.3092035605674432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skose%20heights!5e1!3m2!1sen!2ske!4v1743086954249!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
@@ -2233,6 +1877,19 @@ data-background="assets/img/logo/logo.png"
                 </div>
               </div>
           </div>
+          <div class="col-xl-4 col-lg-5 col-md-6">
+            <div class="td-footer-2-widget space ml-90 mb-40">
+              <h3 class="td-footer-title mb-25"></h3>
+              <div class="row gx-10">
+                <a aria-label="Chat on WhatsApp" 
+                   href="https://wa.me/254726846918?text=Hello%20Pace%20Setter,%20I%20want%20to%20book%20an%20event" 
+                   target="_blank">
+                  <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" />
+                </a>
+              </div>
+            </div>
+            
+          </div>
           <div class="row">
             <div class="col-12">
               <div class="pt-40 td-footer-bottom pb-15">
@@ -2240,20 +1897,21 @@ data-background="assets/img/logo/logo.png"
                   <div class="col-md-9">
                     <div class="td-footer-bottom-copyright mb-30">
                       <p>
-                        Copyright © 2025 pacesetter.co.ke All rights reserved.
+                        Copyright © <span id="current-year"></span> pacesetter.co.ke All rights reserved.
                       </p>
+                      
+                      
+                      
                     </div>
                   </div>
                   <div class="col-md-3">
                     <div class="text-right td-footer-bottom-social mb-30">
+                      
                       <span
-                        ><a href="#"><i class="fa-brands fa-linkedin"></i></a
-                      ></span>
-                      <span
-                        ><a href="#"><i class="fa-brands fa-instagram"></i></a
+                        ><a href="https://www.instagram.com/pace_setter_mag/"><i class="fa-brands fa-instagram"></i></a
                       ></span>
                       <span>
-                        <a href="#">
+                        <a href="https://x.com/the_pace_mag">
                           <svg
                             width="21"
                             height="18"
@@ -2269,7 +1927,7 @@ data-background="assets/img/logo/logo.png"
                         </a>
                       </span>
                       <span
-                        ><a href="#"><i class="fa-brands fa-whatsapp"></i></a
+                        ><a href="https://wa.me/254726846918?text=Hello%20Pace%20Setter,%20I%20want%20to%20book%20an%20event"><i class="fa-brands fa-whatsapp"></i></a
                       ></span>
                     </div>
                   </div>
@@ -2297,5 +1955,11 @@ data-background="assets/img/logo/logo.png"
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      // Get the current year
+      const year = new Date().getFullYear();
+      // Insert the year into the span with id "current-year"
+      document.getElementById("current-year").textContent = year;
+    </script>
   </body>
 </html>
